@@ -6,50 +6,205 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Garena</title>
     <link rel="stylesheet" href="css/landing-page.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"><!--font-->
+  </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/Logo.png"></a>
+        <a href="landing-page.html"><img src="images/Logo.png"></a>
             <nav>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="landing-page.html">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
     </header>
+
     <section>
         <img src="images/Light.png" id="Light">
         <img src="images/Forest_behind.png" id="Forest_behind">
-        <h2 id="text">ไปกันนน</h2>
+        <h2 id="text">I want to play Let's play</h2>
         <a href="testAPI.html" id="btn">Play Game</a>
         <img src="images/Forest_front.png" id="Forest_front">
     </section>
+
     <div class="sec" id="about">
         <h2>About Blockman Go</h2>
         <p>เกม "Garena Blockman GO" ผู้เล่นจะได้พบกับมินิเกมหลากหลายรูปแบบ ทั้งแนวร่วมมือกันกับเพื่อน และแบบแข่งขันกันเอง ซึ่งมาจากความคิดสร้างสรรค์ของผู้เล่นมากมายจากทั่วโลก</p>
     </div>
-    <div class="sec" id="sec">
-        <h2>Parallax Scrolling Effects</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab molestiae sed rem pariatur omnis amet obcaecati, sit corrupti dolore suscipit debitis? Dignissimos, corrupti! Officiis nesciunt possimus sapiente molestias, dolor similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptatibus dolorum laborum reprehenderit consequatur provident cum laboriosam tempora mollitia quo velit quam incidunt at, in temporibus veritatis maiores saepe et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut culpa delectus laboriosam tempore rem autem porro deleniti. Tempora sunt repudiandae fugit, sed reprehenderit ut vero aperiam nobis quos atque.<br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, repudiandae maiores. Consectetur molestiae sint nobis itaque, beatae vero cumque earum asperiores totam odit ad tempora doloremque libero recusandae saepe dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi voluptate, reprehenderit magnam quia esse odit architecto doloremque vitae numquam dolore quos excepturi doloribus labore, dolores et animi officia illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet minus, voluptate nesciunt sint atque dignissimos optio accusamus rerum quam accusantium. Praesentium nihil illo odit cumque. Quas ad at omnis aut?</p>
-        <div class="row">
-            <div class="course-col">
-                <h3>intermediate</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum beatae alias facere aliquid quibusdam voluptates dolores natus laudantium est quis perferendis provident maxime voluptatum, ea unde repellat, nulla repudiandae?</p>
+    <div class="bodies">
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slides">
+                <div id="slides__1" class="slide">
+                    <span class="slide__text">
+                    <div class="name">Bedwars</div>
+                    <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bedwars/logo.png">
+                    <div class="genre">ประเภท : Action, PvP, Multiplayer</div>
+                    <div class="description">"Bed Wars มินิเกมแนว PVP ที่สามารถตั้งทีมเล่นกับเพื่อน ๆ ได้ ภารกิจที่ผู้เล่นจะได้รับคือการปกป้องเตียงของทีมและทำลายเตียงของทีมศัตรู ร่วมมือกับเพื่อนร่วมทีมในการเก็บของ ฟาร์มอาวุธเช่น เหล็ก ทอง มรกต และเพชรให้ได้มากที่สุด เพื่อป้องกันเตียงและเพิ่มความแรงของอาวุธต่อสู้"</div>
+                    </span>
+                  <a class="slide__prev" href="#slides__10" title="Next"></a>
+                  <a class="slide__next" href="#slides__2" title="Next"></a>
+                </div>
+                <div id="slides__2" class="slide">
+                  <span class="slide__text">
+                    <div class="name">Free City</div>
+                    <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/freecity/logo.png">
+                    <div class="genre">ประเภท : Simulation, Open-world</div>
+                    <div class="description">"เคยนึกภาพตัวเองเป็นเจ้าของร้านกาแฟที่กำลังเตรียมกาแฟยามบ่ายให้กับเพื่อนๆ บ้างไหม? หรือคุณเคยอยากลองใช้ชีวิตตามบทบาทต่างๆ เช่น ครู พยาบาล ตำรวจ คนขายเบอร์เกอร์ บ้างไหม? Free City เกมจำลองชีวิตจริงที่คุณกำลังตามหา"</div>
+                </span>
+                  <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                  <a class="slide__next" href="#slides__3" title="Next"></a>
+                </div>
+                <div id="slides__3" class="slide">
+                  <span class="slide__text">
+                    <div class="name">Frontline</div>
+                    <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/frontline/logo.png">
+                    <div class="genre">ประเภท : Shooting, PvP</div>
+                    <div class="description">"เกมจำลองสนามรบ 30 ต่อ 30 คุณจะเล่นเป็นทหารภาคสนามและเข้าสู่แนวหน้าพร้อมกับสหาย 29 คน เพื่อปกป้องตำแหน่งดินแดนของคุณ คุณสามารถใช้อาวุธปืนได้หลากหลาย คุณสามารถขับรถถัง ใช้ปืนไรเฟิลจู่โจมศัตรูจากระยะไกล"</div>
+                  </span>
+                  <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                  <a class="slide__next" href="#slides__4" title="Next"></a>
+                </div>
+                <div id="slides__4" class="slide">
+                  <span class="slide__text">
+                    <div class="name">Party Street</div>
+                    <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/partystreet/logo.png">
+                    <div class="genre">ประเภท : Multiplayer, PvP, Party Game</div>
+                    <div class="description">"ยินดีต้องรับสู่ Party Street! คุณสามารถนำสเก็ตที่สะสมได้มาทัวร์ชมย่านเมืองใน Party Street และตามหาภาพวาดที่ซ่อนอยู่ในแต่ละจุดของเมือง นอกจากนี้ร่วมทัวร์นาเมนต์แห่งท้องถนนกับพรรคพวกด้วยการทดสอบความสามารถกับผู้เข้าแข่งขันกว่า 30 คน เพื่อชิงตำแหน่ง Street King มาพิสูจน์กันว่าใครคือผู้ที่ปราดเปรียวที่สุดในย่านนี้"</div>
+                  </span>
+                  <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                  <a class="slide__next" href="#slides__5" title="Prev"></a>
+                </div>
+                <div id="slides__5" class="slide">
+                    <span class="slide__text">
+                        <div class="name">Bullets Fly</div>
+                        <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bulletsfly/logo.png">
+                        <div class="genre">ประเภท : Battle Royale, Shooting</div>
+                        <div class="description"> "ยินดีต้อนรับสู่ Bullets Fly! โหมดเกมยิงปืนเอาชีวิตรอด คุณต้องเอาชีวิตรอดเพื่อหนีการโจมตีของมังกรดำ ทุกต้องกระโดดร่วมไปที่เกาะแห่งหนึ่งที่ล้อมรอบด้วยกำแพงที่มังกรดำสร้างขึ้น โดยที่พื้นที่สำหรับการเอาชีวิตรอดจะเล็กลงเรื่อยๆ แต่จะมีเพียงทีมเดียวเท่านั้นที่จะอยู่รอดจนถึงจบเกม คุณสามารถเก็บอาวุธและไอเทมต่างๆโดยค้นหาจากหีบสมบัติภายในเกาะจงเอาตัวรอดและอยู่ในเขตปลอดภัยเพื่อเป็นคนสุดท้ายที่เหลืออยู่"</div>                      
+                    </span>
+                    <a class="slide__prev" href="#slides__4" title="Prev"></a>
+                    <a class="slide__next" href="#slides__6" title="Prev"></a>
+                </div>
+                <div id="slides__6" class="slide">
+                    <span class="slide__text">
+                        <div class="name">Rodent Evil</div>
+                        <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/rodentevil/logo.png">
+                        <div class="genre">ประเภท : Horror Adventures, Multiplayers</div>
+                        <div class="description">"หนีออกจากบ้านหนูมรณะให้ได้! ทำทุกอย่างเพื่อหนีออกจากบ้านผีสิงนี้ อย่าหันกลับไปเด็ดขาด! คุณไม่รู้หรอกว่าอะไรกำลังไล่ล่าตามหลังคุณอยู่ หากความจริงเบื้องหลังความสยองขวัญนี้ ค้นหาปริศนาลึกลับร่วมกับเพื่อนๆของคุณ"</div>
+                    </span>
+                    <a class="slide__prev" href="#slides__5" title="Prev"></a>
+                    <a class="slide__next" href="#slides__7" title="Prev"></a>
+                </div>
+                <div id="slides__7" class="slide">
+                    <span class="slide__text">
+                        <div class="name">Jail Break</div>
+                        <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/jailbreak/logo.png">
+                        <div class="genre">ประเภท : PvP, RPG</div>
+                        <div class="description">"ในเมืองนี้ ผู้เล่นจะสามารถเป็นได้ทั้งตำรวจและนักโทษ เมื่อเล่นเป็นตำรวจ คุณจะต้องห้ามโจมตีนักโทษเด็ดขาด ถ้าคุณโจมตีนักโทษ คุณจะต้องเข้าคุกแทน หน้าที่ของคุณก็คือต้องจำกุนักโทษร้ายแรงที่อยู่ข้างนอก ไปตามจับกุมเพื่อรับรางวัลมากมาย เมื่อเล่นเป็นนักโทษ คุณจะต้องเก็บหนังสือเพื่อหากุญแจหรือพลั่วเพื่อแหกคุกออกมา"</div>
+                    </span>
+                    <a class="slide__prev" href="#slides__6" title="Prev"></a>
+                    <a class="slide__next" href="#slides__8" title="Prev"></a>
+                </div>
+                <div id="slides__8" class="slide">
+                    <span class="slide__text">
+                        <div class="name">Build and Shoot</div>
+                        <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/buildandshoot/logo.png">
+                        <div class="genre">ประเภท : PvP, Shooting</div>
+                        <div class="description">"เกมยิงปืนสุดมันส์ที่มีอาวุธมากมายให้เลือก โดยคุณสามารถสร้างบล็อกต่างๆได้อย่างอิสระเพื่อเอาตัวรอด ภายในเกมยังมีระบบช่วยยิงอัตโนมัติของอาวุธปืน สัมผัสความตื่นเต้นในอีกระดับ"</div>
+                    </span>
+                    <a class="slide__prev" href="#slides__7" title="Prev"></a>
+                    <a class="slide__next" href="#slides__9" title="Prev"></a>
+                </div>
+                <div id="slides__9" class="slide">
+                    <span class="slide__text">
+                        <div class="name">Sky Block</div>
+                        <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/skyblock/logo.png">
+                        <div class="genre">ประเภท : PvP, Survivle, Open World</div>
+                        <div class="description">"Sky Block เป็นเกมที่อยู่ในจักรวาลเกมส์ของ Blockman Go ที่ให้คุณได้สร้างโลกของคุณเอง หรือจะสร้างกับเพื่อน ๆ ของคุณก็ได้เช่นเดียวกัน คุณสามารถที่จะสร้างตึก และแม้แต่สร้างเมืองขึ้นมา หรือสำรวจหลุมหลบภัยเพื่อค้นหาทรัพยากรที่มีค่าต่าง ๆ ใน Sky Block คุณสามารถที่จะท่องเที่ยวไปยังสถานที่ที่น่าสนใจต่างๆ ในมือหนึ่ง คุณจะมีถ้ำที่มีของต่าง ๆ ที่คุณสามารถที่จะต่อสู้เหล่าสัตว์ประหลาด หรือแม้แต่สู้กับผู้เล่นคนอื่น ๆ เพื่อที่จะได้รับทรัพยากรที่ดีมากยิ่งขึ้นสำหรับการใช้ในเกมส์ และในอีกมือหนึ่ง คุณก็จะมีธุรกิจเหมืองของคุณที่คุณจะได้รับแร่ธาตุที่มีค่าโดยอัตโนมัติ นอกจากน้ัน คุณยังมีโลกที่สร้างสรรค์ ที่คุณสามารถที่จะสร้างตึกรามบ้านช่อง และรวมตึกเหล่านั้นให้กลายเป็นเมืองหลักของคุณ"</div>
+                    </span>
+                    <a class="slide__prev" href="#slides__8" title="Prev"></a>
+                    <a class="slide__next" href="#slides__10" title="Prev"></a>
+                </div>
+                <div id="slides__10" class="slide">
+                    <span class="slide__text">
+                        <div class="name">Egg Wark</div>
+                        <img class="img" src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/eggwar/logo.png">
+                        <div class="genre">ประเภท : PvP, Multiplayer, Action</div>
+                        <div class="description">"ผู้เล่นจะต้องปกป้องไข่มังกรจากทีมศัตร์ที่จ้องจะทำลายไข่มังกรของทีมเรา ผู้เล่นสามารถเก็บแต้มทรัพยากรได้ด้วยการรวมรวมทรัพยากรที่เกาะส่วนกลาง และอัปเกรดไอเทมเพื่อให้ทีมเติบโตเร็วยิ่งขึ้น ผู้เล่นสามารถปกป้องไข่มังกรด้วยการวางออบซิเดียนไว้รอบๆ! ร่วมสู้รบเพื่อปกป้องไข่มังกรของเรา"</div>
+                    </span>
+                    <a class="slide__prev" href="#slides__9" title="Prev"></a>
+                    <a class="slide__next" href="#slides__1" title="Prev"></a>
+                </div>
+              </div>
+              <div class="slider__nav">
+                  <a class="slider__navlink" href="#slides__1"></a>
+                  <a class="slider__navlink" href="#slides__2"></a>
+                  <a class="slider__navlink" href="#slides__3"></a>
+                  <a class="slider__navlink" href="#slides__4"></a>
+                  <a class="slider__navlink" href="#slides__5"></a>
+                  <a class="slider__navlink" href="#slides__6"></a>
+                  <a class="slider__navlink" href="#slides__7"></a>
+                  <a class="slider__navlink" href="#slides__8"></a>
+                  <a class="slider__navlink" href="#slides__9"></a>
+                  <a class="slider__navlink" href="#slides__10"></a>
+              </div>
             </div>
-            <div class="course-col">
-                <h3>degree</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum beatae alias facere aliquid quibusdam voluptates dolores natus laudantium est quis perferendis provident maxime voluptatum, ea unde repellat, nulla repudiandae?</p>
-            </div>
-            <div class="course-col">
-                <h3>post grad</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum beatae alias facere aliquid quibusdam voluptates dolores natus laudantium est quis perferendis provident maxime voluptatum, ea unde repellat, nulla repudiandae?</p>
-            </div>
-        </div>
+          </div>          
     </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>  
+  
+<!--  FOOTER START -->
+  
+<div class="footer">
+  <div class="inner-footer">
+
+<!--  for company name and description -->
+    <div class="footer-items">
+      <h1>Blockman Go</h1>
+    </div>
+
+<!--  for quick links  -->
+    <div class="footer-items">
+      <h3>Quick Links</h3>
+      <div class="border1"></div> <!--for the underline -->
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#"><li>News</li></a>
+          <a href="#"><li>Event</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+    </div>
+
+<!--  for contact us info -->
+    <div class="footer-items">
+      <h3>Contact us</h3>
+      <div class="border1"></div>
+        <ul>
+          <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+          <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+        </ul> 
+      
+    </div>
+  </div>
+  
+<!--   Footer Bottom start  -->
+  <div class="footer-bottom">
+    Copyright &copy; MooMoo
+  </div>
+</div>
+  
+<!--   Footer Bottom end -->
+  
+<!--   FOOTER END -->
 </body>
 <script src="js/landing-page.js"></script>
 </html>

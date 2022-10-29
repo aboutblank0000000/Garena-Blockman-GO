@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    font-family: "Audiowide", sans-serif;/*font*/
 }
 body
 {
@@ -133,7 +132,7 @@ section img#Forest_front
 .sec
 {
     position: relative;
-    padding: 100px;
+    padding: 100px 100px 0 100px;
     background: #1c0522;
 }
 .sec h2
@@ -149,7 +148,240 @@ section img#Forest_front
     color: #fff;
     text-align: center;
 }
-.row{
+.slide-content
+{
+    margin: 0 40px;
+}
+.bodies{
+    height: 100%;
+  margin: 0px;
+}
+.slider-container {
+    background: #1c0522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 100px;
+}
+
+.slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px;
     text-align: center;
-    color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slide:nth-of-type(even) {
+    background-color: rgb(255, 255, 255);
+}
+.img {
+    border-radius: 5%;
+    object-fit: contain;
+    width: 10rem;
+    height: 10rem;
+  }
+span.slide__text{
+    margin: 40px;
+    bottom: 5%;
+}  
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 1rem;
+  }
+  
+.genre {
+    font-size: 18px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+.description {
+    font-size: 18px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    height: 6rem;
+    overflow-y: scroll;
+    background-color: aliceblue;
+  }
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+
+.slide__next {
+    right: 50px;
+}
+
+.slide a {
+    background: none;
+    border: none;
+}
+
+a.slide__prev,
+.slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: '';
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+.slider__nav {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -160px;
+    text-align: center;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 10px 0 10px;
+}
+.slider__navlink:hover{
+    background-color: #7597de;
+    z-index: 20;
+
+}
+/* FOOTER */
+.footer {
+	width: 100%;
+	background: #00121b;
+	display: block;
+ }
+
+ .inner-footer {
+	 width: 95%;
+	 margin: auto;
+	 display: flex;
+	 flex-wrap: wrap;
+	 box-sizing: border-box;
+	 justify-content: center;
+ }
+
+.footer-items {
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.footer-items p {
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+	color: #fff;
+}
+
+.footer-items h1 {
+	color: #fff;
+}
+
+.border1 {
+	height: 3px;
+	width: 40px;
+	background: #fff;
+	color: #fff;
+	background-color: #fff;
+	border: 0px;
+}
+
+ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;	
+ }
+
+ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ul a:hover {
+	color: #7597de;
+}
+
+ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+li i {
+	margin-right: 20px;
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #00121b;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+	.footer-items {
+		width: 100%;
+	}
 }

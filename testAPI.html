@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/testAPI.js"></script>
     <link rel="stylesheet" href="css/testAPI.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--font awesome-->
     <title>Test API</title>
 </head>
 <body>
     <ul id="list">
-
+        <h1>API ที่เราได้</h1>
         <li class="card" style="display: none">
             <div class="name">ชื่อ : N/A</div>
             <img class="img" src="" alt=""/>
             <div class="genre">ประเภท : N/A</div>
             <div class="description">รายละเอียด : ไม่มีข้อมูล</div>
             <div class="outside-btn">
-                <button type="button" class="btn" onclick="">
+                <button type="button" class="btn" onclick="" value="">
                     <i class="fa-solid fa-play fa-xl"></i> กด2ทีดูคลิป
                 </button>
             </div>
         </li>
-
-
     </ul>
+
+    <div class="container">
+        <div class="popup" id="popup">
+            <button type="button" id="closebtn" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
 </body>
 </html>
