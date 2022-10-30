@@ -142,3 +142,15 @@ body {
   border-radius: 4px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* -------------------------------------------- */
+
+.menu img {
+  width: 15rem;
+  margin: 0 0.2rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu_div {
+  margin-bottom: 10rem;
+}

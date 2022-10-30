@@ -17,11 +17,11 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
 function createCard(data) {
   list = data;
   for (let i = 0; i < data.length; i++) {
-    const list = document.getElementById("list");
+    const cardList = document.getElementById("list");
     const card = document.createElement("li");
     card.className = "card";
     card.id = "card";
-    list.appendChild(card);
+    cardList.appendChild(card);
 
     let name = document.createElement("div");
     name.className = "name";
@@ -91,9 +91,9 @@ function openPopup(itself) {
   if (image_array != null && image_array.length > 0) {
     //ดักกดซ้ำ
     for (let j = 0; j < image_array.length; j++) {
-      eval("image"+j+ "= document.createElement(`img`)");
-      eval("image"+j+".src"+"= image_array[j]");
-      eval("image_group.appendChild(image"+j+")");
+        let image = document.createElement('img');
+        image.src = image_array[j];
+        image_group.appendChild(image);
       }
     }
     else {
@@ -109,4 +109,43 @@ function closePopup() {
   popup.style.visibility = "hidden";
   popup_title.remove();
   image_group.remove();
+}
+
+// -----------------------------------------------------------------------//
+fetch("https://gamertocoder.garena.co.th/api/assets")
+.then((response) => {
+    if (response.status !== 200) {
+      return response.status;
+    }
+    return response.json();
+})
+.then((data) => { 
+  if (typeof data == "number") {
+    alert(data);
+  } else {
+    createList(data);
+    console.log(data);
+  }
+})
+
+function createList(data) {
+  mylist = data;
+  for (let i = 0; i < Object.keys(mylist).length; i++) {
+    const menu = document.getElementById("menu");
+    const menuDiv = document.createElement("div");
+    menuDiv.className = "menu_div";
+    menuDiv.id = Object.keys(mylist)[i];
+    menu.appendChild(menuDiv);
+
+    let divdiv = document.getElementById(Object.keys(mylist)[i]);
+    let menuName = document.createElement("h1");
+    menuName.innerHTML = Object.keys(mylist)[i];
+    divdiv.appendChild(menuName);
+
+    for (let j = 0; j < mylist[Object.keys(mylist)[i]].length; j++) {
+      let menuList = document.createElement("img");
+      menuList.src = mylist[Object.keys(mylist)[i]][j];
+      divdiv.appendChild(menuList);
+    }
+  }
 }
