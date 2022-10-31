@@ -71,6 +71,23 @@ function createSlide(data) {
         slide_description.innerHTML = data[i].description;
         slide_span.appendChild(slide_description);
 
+        const obtn = document.createElement("div");
+        obtn.className = "outside-btn";
+        slide_span.appendChild(obtn);
+
+        const button = document.createElement("button");
+        button.className = "btn";
+        button.id = "btn"+i;
+        button.type = "button";
+        button.innerHTML = " คลิกเพื่อเล่นเกม";
+        // button.setAttribute('onclick', "window.location.href=");
+        button.value = i;
+        obtn.appendChild(button);
+
+        const btn_icon = document.createElement("i");
+        btn_icon.className = "fa-solid fa-play fa-xl";
+        button.insertBefore(btn_icon, button.firstChild);
+
         let slide_prev = document.createElement('a');
         slide_prev.className = 'slide__prev';
         if ( i === 0 ) {
@@ -90,6 +107,7 @@ function createSlide(data) {
         slidess.appendChild(slide_next);
     }
     createSlideBubble();
+    createButtonHref()
 }
 
 function createSlideBubble() {
@@ -101,5 +119,49 @@ function createSlideBubble() {
         bubble.className = 'slider__navlink';
         bubble.href = '#slides_' + (i+1);
         slider_nav.appendChild(bubble);
+    }
+}
+
+function createButtonHref() {
+    for (let i = 0; i < list.length; i++) {
+        let btnslide = document.getElementById('btn'+i);
+        switch ( i ) {
+            case 0 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g1046?onlineNumber=48258')")
+                break;
+            case 1 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g2052?onlineNumber=7864')");
+                break;
+            case 2 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g2061?onlineNumber=4168')");
+                break;
+            case 3 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g2060?onlineNumber=1141')");
+                break;
+            case 4 :
+                btnslide.setAttribute('onclick', "window.open('https://blockmango.garena.com/mini_games/article/en/11/')");
+                break;
+            case 5 :
+                btnslide.setAttribute('onclick', "window.open('https://blockmango.garena.com/mini_games/article/en/13/')");
+                break;
+            case 6 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g1014?onlineNumber=6138')");
+                break;
+            case 7 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g1042?onlineNumber=1618')");
+                break;
+            case 8 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g1048?onlineNumber=26565')");
+                break;
+            case 9 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g1018?onlineNumber=1335')");
+                break;
+            case 10 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/game-details/g2055?onlineNumber=271')");
+                break;
+            case 11 :
+                btnslide.setAttribute('onclick', "window.open('https://pc.blockmanmobile.com/#/')");
+                break;
+        }
     }
 }

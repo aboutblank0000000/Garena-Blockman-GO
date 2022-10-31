@@ -7,11 +7,18 @@
     scroll-behavior: smooth;
     font-family: 'Prompt', sans-serif;/*font*/
 }
+a{
+    color: transparent;
+}
+
+i {
+  color: white;
+}
 .header
 {
     /* min-height: 100vh; */
     /* width: 100%; */
-    height: 60rem;
+    height: 100vh;
     background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0)), url("../images/news_banner.png");
     background-position: center;
     background-size: cover;
@@ -104,8 +111,6 @@ body{
     background: #7597de;
     transition: 1s;
 }
-
-
 /*----- course -----*/
 .course{
     width: 80%;
@@ -119,7 +124,7 @@ h1{
     color: #fff;
 }
 p{
-    color: #777;
+    color: #fff;
     font-weight: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -181,7 +186,7 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-    background: rgba(226,0,0,0.7);
+    background: rgba(95, 11, 151, 0.701);
 }
 .layer h3{
     width: 100%;
@@ -195,9 +200,43 @@ h3{
     opacity: 0;
     transition: 0.5s;
 }
+.layer .more-btn{
+    width: 50%;
+    font-weight: 200;
+    color: #000000;
+    font-size: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+}
+.layer:hover .more-btn{
+    bottom: 30%;
+    opacity: 1;
+}
+.more-btn
+{
+    width: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 0;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+}
+.more-btn:hover
+{
+    color: #ffffff;
+    background: #7597de;
+    transition: 0.5s;
 }
 /*------ facilities ------*/
 .facilities{
@@ -210,7 +249,7 @@ h3{
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: left;
+    text-align: center;
 }
 .facilities-col img{
     width: 100%;
@@ -223,6 +262,33 @@ h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+}
+.facilities-col h6{
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.visit-btn{
+    display: inline-block;
+    top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.visit-btn:hover
+{
+    border: 1px solid #7597de;
+    background: #7597de;
+    transition: 1s;
 }
 /*------ footer -----*/
 .footer{
@@ -240,4 +306,51 @@ h3{
     margin: 0 1rem;
     cursor: pointer;
     padding: 18px 0;
+}
+
+.icons .icon:hover {
+    color: #80A7EF;
+}
+/*-------- about us page -------*/
+.sub-header{
+    height: 50vh;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0)), url("../images/Forest_behind.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    text-align: center;
+    padding: 200px 0;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+
+/* --------- Events page ------------- */
+canvas {
+    margin-top: 4rem;
+}
+.sub-header2{
+    height: 50vh;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0)), url("../images/fantasy.jpeg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header2 h1{
+    text-align: center;
+    padding: 200px 0;
 }

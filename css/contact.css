@@ -9,6 +9,15 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
+
+a{
+    color: transparent;
+}
+
+i {
+  color: white;
+}
+
   header
 {
     position: absolute;
@@ -131,6 +140,9 @@ header ul li:hover::after
     display: flex;
     justify-content: space-between;
   }
+  .card i {
+    color: black;;
+  }
   .card a {
     text-decoration: none;
     color: inherit;
@@ -161,3 +173,27 @@ header ul li:hover::after
       padding: 0 1em;
     }
   }
+  /*------ footer -----*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.iconss .icon{
+  margin: 0 1rem;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.iconss .icon:hover {
+  color: #80A7EF;
+}
+.footer p1 {
+  color: #fff;
+}
